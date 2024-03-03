@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PC Blocked - Pay Now</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  .popup-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .pay-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="popup-container">
+  <div class="popup-content">
+    <h2>Important Alert: Your PC Has Been Blocked!</h2>
+    <p>
+      We regret to inform you that your PC has been temporarily blocked due to suspicious activity detected on your system. Our security protocols have detected potential threats to your data and privacy.
+    </p>
+    <p>
+      To regain access to your PC and ensure the safety of your personal information, you are required to make a payment using an Apple Card.
+    </p>
+    <button class="pay-button">Pay Now</button>
+  </div>
+</div>
+
+<script>
+  document.querySelector('.pay-button').addEventListener('click', function() {
+    alert('Please enter your Apple Card details to complete the payment.');
+    // Here you can redirect the user to a payment page or any other action you want to perform.
+  });
+</script>
+
+</body>
+</html>
